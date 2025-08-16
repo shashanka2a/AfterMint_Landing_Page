@@ -1,11 +1,18 @@
 {
   "name": "aftermint-landing",
   "version": "1.0.0",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test"
+  },
+
   "dependencies": {
     "react": "",
     "react-dom": "",
     "classnames": "",
     "@headlessui/react": "",
+    "react-scripts": "",
     "@radix-ui/react-dialog": "",
     "@radix-ui/react-popover": "",
     "@radix-ui/react-tooltip": "",
