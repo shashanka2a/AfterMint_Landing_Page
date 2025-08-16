@@ -1,13 +1,20 @@
-import { HeroSection } from './components/HeroSection';
-import { HowItWorks } from './components/HowItWorks';
-import { RewardPreview } from './components/RewardPreview';
-import { PoweredBy } from './components/PoweredBy';
-import { SDKExample } from './components/SDKExample';
-import { FinalCTA } from './components/FinalCTA';
+import Head from 'next/head'
+import { HeroSection } from '../components/HeroSection';
+import { HowItWorks } from '../components/HowItWorks';
+import { RewardPreview } from '../components/RewardPreview';
+import { PoweredBy } from '../components/PoweredBy';
+import { SDKExample } from '../components/SDKExample';
+import { FinalCTA } from '../components/FinalCTA';
 
-export default function App() {
+export default function Home() {
   return (
-    <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
+    <>
+      <Head>
+        <title>AfterMint SDK - Reward your users with NFTs</title>
+        <meta name="description" content="AfterMint SDK - Reward your users with NFTs" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
+      <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
         <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
@@ -60,5 +67,6 @@ export default function App() {
         <FinalCTA />
       </main>
     </div>
+    </>
   );
 }
